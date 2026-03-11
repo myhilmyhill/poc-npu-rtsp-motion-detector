@@ -1,4 +1,4 @@
-﻿pushd C:\Users\ebyck\qairt\2.44.0.260225\bin
+pushd "$env:USERPROFILE\qairt\2.44.0.260225\bin"
 .\envsetup.ps1 
 & "$env:QAIRT_SDK_ROOT\bin\check-windows-dependency.ps1"
 & "$env:QAIRT_SDK_ROOT\bin\envcheck.ps1" -m
