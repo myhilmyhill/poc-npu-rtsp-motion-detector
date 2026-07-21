@@ -8,6 +8,8 @@ py -3.10 -m venv "venv"
 & "venv\Scripts\Activate.ps1"
 python -m pip install --upgrade pip
 python "$env:QAIRT_SDK_ROOT\bin\check-python-dependency"
+pip install onnxruntime-qnn
+pip install dotenv
 
 # QNNExecutionProvider が使えないときは以下を実行
 # pip uninstall onnxruntime
